@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" style="background-color: #121212; color:#cccc00;">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Udo's E-Flash Cards</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/index-style.css">        
+    </head>
+
+    <body style="background-color:#121212;">
+        <header>
+            <nav id="top-nav" class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <a href="index.php">
+                                <img class= "img1" src="images/Logo.png"/>
+                            </a>
+                        </div>
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#item-list" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div id="right-header">
+                        <a class="login" href="login.html">Log in</a>
+                        <a class="signup" href="signup.html">Sign up</a>
+                    </div>
+
+                    <div id="item-list" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs navbar-static-top">
+                            <li id="phone-login"><a href="login.html">Log in</a></li>
+          				    <li id="phone-signup"><a href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+  	    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

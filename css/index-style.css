@@ -1,5 +1,5 @@
 #top-nav{
-	background-color: #e6e600;
+	background-color: #383dc9;
 	clear:both;
 }
 
@@ -58,7 +58,7 @@ header a{
 
 .login:hover{
     background-color: #121212;
-    color: #e6e600;
+    color: #383dc9;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -74,7 +74,7 @@ header a{
 
 .signup:hover{
     background-color: #121212;
-    color: #e6e600;
+    color: #383dc9;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -91,7 +91,7 @@ header a{
     font-weight: bold;
     width: auto;
     color: #121212;
-    background-color: #e6e600;
+    background-color: #383dc9;
     border: none;
     outline: none;
 }
@@ -101,7 +101,7 @@ header a{
 }
 
 #phone-login a:hover{
-    color: #e6e600;
+    color: #383dc9;
     text-decoration: none;
 }
 
@@ -110,20 +110,20 @@ header a{
 }
 
 #phone-signup a:hover{
-    color: #e6e600;
+    color: #383dc9;
     text-decoration: none;
 }
 
 #phone-signout button:hover{
     background-color: #121212;
-    color: #e6e600;
+    color: #383dc9;
 }
 
 #front, #back{
     position: relative;
 	background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 10px;
 	width: 500px;
     height: auto; 
@@ -150,38 +150,38 @@ header a{
 
 .edit-button{
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     padding: 2px;
     font-weight: bold;
 }
 
 .edit-button:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
 
 .save-button{
     position: relative;
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     padding: 2px;
     font-weight: bold;
 }
 
 .save-button:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
 
 .left-arrow{
     position: absolute;
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     height: 50px;
     width: 50px;
@@ -190,15 +190,15 @@ header a{
 }
 
 .left-arrow:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
 
 .right-arrow{
     position: absolute;
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     height: 50px;
     width: 50px;
@@ -207,7 +207,7 @@ header a{
 }
 
 .right-arrow:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
     
@@ -218,8 +218,8 @@ header a{
 
 .left-arrow-mobile{
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     margin-left: 15%;
     height: 50px;
@@ -229,15 +229,15 @@ header a{
 }
 
 .left-arrow-mobile:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
 
 .right-arrow-mobile{
     float: right;
     background-color: #121212;
-    color: #e6e600;
-    border: 3px solid #e6e600;
+    color: #383dc9;
+    border: 3px solid #383dc9;
     border-radius: 5px;
     margin-right: 15%;
     height: 50px;
@@ -247,14 +247,14 @@ header a{
 }
 
 .right-arrow-mobile:hover{
-    background-color: #e6e600;
+    background-color: #383dc9;
     color: #121212;
 }
 
 #signout{
     display: inherit;
     color: #121212;
-    background-color: #e6e600;
+    background-color: #383dc9;
     margin: auto;
     margin-left: 20px;
     font-size: 1.5em;
@@ -268,12 +268,12 @@ header a{
 
 #signout:hover{
     background-color: #121212;
-    color: #e6e600;
+    color: #383dc9;
     text-decoration: none;
 }
 
 #char-warning{
-    color:#e6e600;
+    color:#383dc9;
     margin: auto;
     font-size: 1.2em;
     font-weight: bold;
