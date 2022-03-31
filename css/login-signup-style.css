@@ -1,0 +1,145 @@
+#top-nav{
+	background-color: #383ee8;
+	clear:both;
+}
+
+#box{
+    position: relative;
+	background-color: #121212;
+	width: 500px;
+    height: auto; 
+    min-height: 300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+	padding: 30px;
+	overflow: auto;
+    text-align: center;
+}
+
+#box p{
+    color: #414141;
+}
+
+#box a{
+    color: #383ee8;
+}
+
+#box a:hover{
+    text-decoration: none;
+}
+
+form input{
+    position: relative;
+    color: #383ee8;
+    background-color: #121212;
+    border: 2px solid #383ee8;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+    height: 40px;
+    width: 250px;    
+}
+
+form input:focus{
+    outline: none;
+}
+
+form input:first-child{
+    margin-top: 20px;
+}
+
+form input:last-child{
+    width: 80px;
+    height: 35px;
+    padding: 2px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+form input:last-child:hover{
+    background-color: #383ee8;
+    color: #121212;
+}
+
+#disclaimer{
+    color: red;
+    font-size: 1.2em;
+}
+
+@media (max-width: 400px) {
+    .img1 {
+        width: 150px;
+        height: 30px;
+        margin-left: -15px;
+    }
+    
+    #box{
+        display: block;
+        width: 95vw;
+        height: auto; 
+        min-height: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        overflow: auto;
+        margin-top: 50px;
+    }
+
+    form input{
+        width: 80%;
+    }
+    
+}
+
+@media (min-width: 400px) {
+    #top-nav{
+		height: 4.3em;
+	}
+
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    #box{
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    #top-nav{
+		height: 4.3em;
+	}
+
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    #box{
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    #box{
+        margin-top: 80px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+}
