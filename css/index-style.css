@@ -1,0 +1,534 @@
+#top-nav{
+	background-color: #e6e600;
+	clear:both;
+}
+
+header a{
+    color:black;
+}
+
+#item-list a{
+    color: black;
+}
+
+#item-list a:hover{
+    color: rgb(107, 107, 107);
+}
+
+.navbar-brand h1{
+	margin: 0px;
+    width: fit-content;
+}
+
+.navbar-header button{
+	margin-top: 17px;
+}
+
+#nav-list {
+    padding: 7.5px;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#right-header{
+    display: flex;
+    margin-top: 8px;
+    float: right;
+}
+
+#right-header div{
+    margin-top: 7px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.login {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #121212;
+    border-radius: 5px;
+}
+
+.login:hover{
+    background-color: #121212;
+    color: #e6e600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.signup {
+    float: right;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+    border: 2px solid #121212;
+    border-radius: 5px;
+}
+
+.signup:hover{
+    background-color: #121212;
+    color: #e6e600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#phone-login a{
+    font-weight: bold;
+}
+
+#phone-signup a{
+    font-weight: bold;
+}
+
+#phone-signout button{
+    font-weight: bold;
+    width: auto;
+    color: #121212;
+    background-color: #e6e600;
+    border: none;
+    outline: none;
+}
+
+#phone-login:hover{
+    background-color: #121212;
+}
+
+#phone-login a:hover{
+    color: #e6e600;
+    text-decoration: none;
+}
+
+#phone-signup:hover{
+    background-color: #121212;
+}
+
+#phone-signup a:hover{
+    color: #e6e600;
+    text-decoration: none;
+}
+
+#phone-signout button:hover{
+    background-color: #121212;
+    color: #e6e600;
+}
+
+#front, #back{
+    position: relative;
+	background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 10px;
+	width: 500px;
+    height: auto; 
+    min-height: 400px;
+    margin: 0 auto;
+	padding: 30px;
+    font-weight: bold;  
+	overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+#back{
+    display: none;
+}
+
+.container-fluid{
+    background-color: #121212;
+}
+
+.edit-button{
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.edit-button:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+
+.save-button{
+    position: relative;
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.save-button:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+
+.left-arrow{
+    position: absolute;
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.left-arrow:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+
+.right-arrow{
+    position: absolute;
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.right-arrow:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+    
+.arrows-mobile{
+    display: block;
+    margin-top: 20px;
+}
+
+.left-arrow-mobile{
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    margin-left: 15%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.left-arrow-mobile:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+
+.right-arrow-mobile{
+    float: right;
+    background-color: #121212;
+    color: #e6e600;
+    border: 3px solid #e6e600;
+    border-radius: 5px;
+    margin-right: 15%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.5em;    
+}
+
+.right-arrow-mobile:hover{
+    background-color: #e6e600;
+    color: #121212;
+}
+
+#signout{
+    display: inherit;
+    color: #121212;
+    background-color: #e6e600;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 1.5em;
+    width: auto;
+    align-content: center;
+    font-weight: bold;
+    border: 2px solid #121212;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#signout:hover{
+    background-color: #121212;
+    color: #e6e600;
+    text-decoration: none;
+}
+
+#char-warning{
+    color:#e6e600;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: -70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+@media (max-width: 550px) {
+    .img1 {
+        width: 130px;
+        height: 30px;
+        margin-left: -15px;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+
+    #signout{
+        display: none;
+    }
+
+    #right-header div{
+        display: none;
+    }
+
+    #front, #back{
+        width: 70vw;
+        height: auto; 
+        min-height:200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    #back{
+        display: none;
+    }
+
+    .edit-button{
+        margin-top: 30px;
+        margin-left: 29.166666667%;
+        margin-right: 29.166666667%;
+    }
+
+    .save-button{
+        margin-top: 15px;
+        margin-left: 29.166666667%;
+        margin-right: 29.166666667%;
+    }
+
+    .left-arrow{        
+        display: none;
+    }
+
+    .right-arrow{
+        display: none;
+    }
+}
+
+@media (min-width: 550px) {
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+
+    #signout{
+        display: none;
+    }
+
+    #right-header div{
+        display: none;
+    }
+
+    #front, #back{
+        margin-top: 80px;
+    }
+
+    .edit-button{
+        margin-top: 30px;
+        margin-left: 29.166666667%;
+        margin-right: 29.166666667%;
+    }
+
+    .save-button{
+        margin-top: 15px;
+        margin-left: 29.166666667%;
+        margin-right: 29.166666667%;
+    }
+    
+    .left-arrow{        
+        display: none;
+    }
+
+    .right-arrow{
+        display: none;
+    }
+    
+    .arrows-mobile{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #top-nav{
+		height: 4.3em;
+	}
+
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    .login{
+        display: inherit;
+    }
+
+    .signup{
+        display: inherit;
+    }
+
+    #signout{
+        display: inherit;
+    }
+
+    #right-header div{
+        display: inherit;
+    }
+
+    #front, #back{
+        margin-top: 80px;
+    }
+
+    .edit-button{
+        margin-top: 30px;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+    }
+
+    .save-button{
+        margin-top: 15px;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+    } 
+
+    .left-arrow{        
+        top: 330px;
+        left: 8%;
+        display: block;
+    }
+
+    .right-arrow{
+        top: 330px;
+        right: 8%;
+        display: block;
+    } 
+
+    .arrows-mobile{
+        display: none;
+    }   
+}
+
+@media (min-width: 992px) {
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    #front, #back{
+        margin-top: 80px;
+    }
+    
+    .edit-button{
+        margin-top: 30px;
+        margin-left: 40vw;
+        margin-right: 0;
+    }
+
+    .save-button{
+        float: right;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 40vw;
+    }
+
+    .left-arrow{        
+        top: 330px;
+        left: 15%;
+        display: block;
+    }
+
+    .right-arrow{
+        top: 330px;
+        right: 15%;
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img1 {
+        height: 50px;
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    .edit-button{
+        margin-top: 30px;
+        margin-left: 40vw;
+        margin-right: 0;
+    }
+
+    .save-button{
+        float: right;
+        margin-top: 30px;
+        margin-right: 40vw;
+        margin-left: 0;
+    }
+
+    .left-arrow{        
+        top: 330px;
+        left: 22%;
+        display: block;
+    }
+
+    .right-arrow{
+        top: 330px;
+        right: 22%;
+        display: block;
+    }
+}

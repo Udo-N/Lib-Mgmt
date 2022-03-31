@@ -1,5 +1,5 @@
 #top-nav{
-	background-color: #383ee8;
+	background-color: #383dc9;
 	clear:both;
 }
 
@@ -22,7 +22,7 @@
 }
 
 #box a{
-    color: #383ee8;
+    color: #383dc9;
 }
 
 #box a:hover{
@@ -31,9 +31,9 @@
 
 form input{
     position: relative;
-    color: #383ee8;
+    color: #383dc9;
     background-color: #121212;
-    border: 2px solid #383ee8;
+    border: 2px solid #383dc9;
     border-radius: 10px;
     margin: 10px auto;
     padding: 5px;
@@ -58,7 +58,7 @@ form input:last-child{
 }
 
 form input:last-child:hover{
-    background-color: #383ee8;
+    background-color: #383dc9;
     color: #121212;
 }
 

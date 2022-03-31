@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sign in</title>
+        <title>Create Account</title>
         <link rel="stylesheet" href="css/login-signup-style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
     </head>
@@ -28,14 +28,15 @@
         <div class = "container-fluid">    
             <div class="row"> 
                 <div id = "box">
-                    <form action="php/login.php" method="post">
+                    <form action="php/signup.php" method="post">
                         <input type="text" id="username" name="username" placeholder="Username"><br>
                         <input type="password" id="password" name="password" placeholder="Password"><br>
-                        <input type="submit" value="Login">
+                        <input type="password" id="password2" name="password2" placeholder="Re-enter Password"><br>
+                        <input type="submit" value="Sign up">
                     </form>
 
-                    <p>Don't have an account? <br>
-                    <a href="signup.html">Sign up</a> here</p>
+                    <p>Already have an account? <br>
+                    <a href="login.html">Login</a> here</p>
                 </div>
 
                 
@@ -45,3 +46,4 @@
     </body>
 
 </html>
+
