@@ -57,10 +57,20 @@
                 <img class="book-thumbnail" src="images/book1.jpg">
                 <div class="book-details">
                     <p class="book-title">The Facility</p>
-                    <!-- <p class="availability">Available</p> -->
-                </div>
-                
-                
+                    <p class="availability">Available</p>
+                    <div class="buttons">
+                        <button class="booking">Book</button>
+                        <button class="reserve">Reserve</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="book">
+                <img class="book-thumbnail" src="images/book4.jpg">
+                <div class="book-details">
+                    <p class="book-title">The Order</p>
+                    <p class="availability">Unavailable</p>
+                </div>  
             </div>
         </div>
 

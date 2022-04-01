@@ -9,11 +9,13 @@
     $book_ids = [];
     $books = [];
 
-    $query = "SELECT id FROM `library-database`.`books` WHERE LOWER(`title`) LIKE LOWER('%$search%')";
-    $statement = $db->prepare($query);
-    $statement->execute();
-    $book_ids = $statement->fetchAll();
-    $statement->closeCursor();
+    if($search){
+        $query = "SELECT id FROM `library-database`.`books` WHERE LOWER(`title`) LIKE LOWER('%$search%')";
+        $statement = $db->prepare($query);
+        $statement->execute();
+        $book_ids = $statement->fetchAll();
+        $statement->closeCursor();
+    }
 
     if(!$book_ids){
         echo("No results");

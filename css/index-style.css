@@ -179,7 +179,7 @@ form input:last-child{
     padding: 2px;
     margin-top: 30px;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 form input:last-child:hover{
@@ -197,6 +197,12 @@ form input:last-child:hover{
     margin: auto;
 }
 
+.book-thumbnail{  
+    float: left; 
+    width: 400px;
+    height: auto;
+}
+
 .book-details{
     float: left;
     padding-left: 50px;
@@ -208,10 +214,31 @@ form input:last-child:hover{
     color: #383dc9; 
 }
 
-.book-thumbnail{  
-    float: left; 
-    width: 400px;
-    height: auto;
+.availability{
+    font-size: 2em;
+    color: #383dc9; 
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking, .reserve{
+    background-color: #121212;
+    color: #383dc9;
+    border: 3px solid #383dc9;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.booking:hover, .reserve:hover{
+    background-color: #383dc9;
+    color: #121212;
 }
 
 @media (max-width: 550px) {
