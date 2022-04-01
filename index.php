@@ -46,10 +46,22 @@
         </header>
 
         <div class = "container-fluid"> 
-            <form action="php/search.php" method="post">
-                <input id="search-input" type="text" placeholder="Search..." name="searchVal">
-                <input type="submit" value="Search Book">
-            </form>
+            <div id="search-bar">
+                <form action="php/search.php" method="post">
+                    <input id="search-input" type="text" placeholder="Search..." name="searchVal">
+                    <input type="submit" value="Search Book">
+                </form>
+            </div>
+
+            <div class="book">
+                <img class="book-thumbnail" src="images/book1.jpg">
+                <div class="book-details">
+                    <p class="book-title">The Facility</p>
+                    <!-- <p class="availability">Available</p> -->
+                </div>
+                
+                
+            </div>
         </div>
 
         <script src="js/jquery-2.1.4.min.js"></script>

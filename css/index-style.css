@@ -127,109 +127,6 @@ header a{
     background-color: #121212;
 }
 
-.edit-button{
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    padding: 2px;
-    font-weight: bold;
-}
-
-.edit-button:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-
-.save-button{
-    position: relative;
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    padding: 2px;
-    font-weight: bold;
-}
-
-.save-button:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-
-.left-arrow{
-    position: absolute;
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    height: 50px;
-    width: 50px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.left-arrow:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-
-.right-arrow{
-    position: absolute;
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    height: 50px;
-    width: 50px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.right-arrow:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-    
-.arrows-mobile{
-    display: block;
-    margin-top: 20px;
-}
-
-.left-arrow-mobile{
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    margin-left: 15%;
-    height: 50px;
-    width: 50px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.left-arrow-mobile:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-
-.right-arrow-mobile{
-    float: right;
-    background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 5px;
-    margin-right: 15%;
-    height: 50px;
-    width: 50px;
-    font-weight: bold;
-    font-size: 1.5em;    
-}
-
-.right-arrow-mobile:hover{
-    background-color: #383dc9;
-    color: #121212;
-}
-
 #signout{
     display: inherit;
     color: #121212;
@@ -282,11 +179,39 @@ form input:last-child{
     padding: 2px;
     margin-top: 30px;
     font-weight: bold;
+    margin-bottom: 100px;
 }
 
 form input:last-child:hover{
     background-color: #383dc9;
     color: #121212;
+}
+
+.book{
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.book-details{
+    float: left;
+    padding-left: 50px;
+    padding-top: 30px;   
+}
+
+.book-title{
+    font-size: 4em;
+    color: #383dc9; 
+}
+
+.book-thumbnail{  
+    float: left; 
+    width: 400px;
+    height: auto;
 }
 
 @media (max-width: 550px) {
