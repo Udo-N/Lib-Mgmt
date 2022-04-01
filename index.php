@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Udo's E-Flash Cards</title>
+        <title>UD Library</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index-style.css">        
     </head>
@@ -45,7 +45,12 @@
             </nav>
         </header>
 
-
+        <div class = "container-fluid"> 
+            <form action="php/search.php" method="post">
+                <input id="search-input" type="text" placeholder="Search..." name="searchVal">
+                <input type="submit" value="Search Book">
+            </form>
+        </div>
 
         <script src="js/jquery-2.1.4.min.js"></script>
   	    <script src="js/bootstrap.min.js"></script>

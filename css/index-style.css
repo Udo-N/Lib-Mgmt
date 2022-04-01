@@ -119,27 +119,6 @@ header a{
     color: #383dc9;
 }
 
-#front, #back{
-    position: relative;
-	background-color: #121212;
-    color: #383dc9;
-    border: 3px solid #383dc9;
-    border-radius: 10px;
-	width: 500px;
-    height: auto; 
-    min-height: 400px;
-    margin: 0 auto;
-	padding: 30px;
-    font-weight: bold;  
-	overflow: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-}
-
 #back{
     display: none;
 }
@@ -272,18 +251,42 @@ header a{
     text-decoration: none;
 }
 
-#char-warning{
-    color:#383dc9;
+form input{
     margin: auto;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 45px;
-    margin-bottom: -70px;
+    color: #383dc9;
+    background-color: #121212;
+    border: 2px solid #383dc9;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
+    text-align: center;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form input:first-child{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+form input:last-child{
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+form input:last-child:hover{
+    background-color: #383dc9;
+    color: #121212;
 }
 
 @media (max-width: 550px) {
@@ -309,46 +312,6 @@ header a{
         display: none;
     }
 
-    #front, #back{
-        width: 70vw;
-        height: auto; 
-        min-height:200px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        overflow: auto;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center; 
-        align-items: center;
-    }
-
-    #back{
-        display: none;
-    }
-
-    .edit-button{
-        margin-top: 30px;
-        margin-left: 29.166666667%;
-        margin-right: 29.166666667%;
-    }
-
-    .save-button{
-        margin-top: 15px;
-        margin-left: 29.166666667%;
-        margin-right: 29.166666667%;
-    }
-
-    .left-arrow{        
-        display: none;
-    }
-
-    .right-arrow{
-        display: none;
-    }
 }
 
 @media (min-width: 550px) {
