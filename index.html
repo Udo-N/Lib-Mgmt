@@ -1,28 +1,3 @@
-<?php
-    $dsn = 'mysql:host=localhost; dbname=library-database';
-    $username = 'pma';
-    $password = 'Passw0rd69.';
-
-    $db = new PDO($dsn, $username, $password);
-
-    session_start();
-    $ids = $_SESSION['Book_IDs'];       // Array containing ids of results of search.php
-    // print_r($ids[0]);
-    $titles = [];
-    $thumbnails = [];
-    $availability = [];
-
-    for ($i = 0; $i < count($ids); $i++){
-        $current_title = $ids[$i]['title'];
-        $current_thumbnail = $ids[$i]['image'];
-        $current_availability = $ids[$i]['availability'];
-
-        array_push($titles, $current_title);
-        array_push($thumbnails, $current_thumbnail);
-        array_push($availability, $current_availability);
-    }
-?>
-
 <!DOCTYPE html>
 
 <html lang="en" style="background-color: #121212; color:#383dc9;">
@@ -42,7 +17,7 @@
                 <div class="container">
                     <div class="navbar-header">
                         <div class="navbar-brand">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img class= "img1" src="images/Logo.png"/>
                             </a>
                         </div>
@@ -95,37 +70,3 @@
   	    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
-
-<script>
-    var titles = <?php echo json_encode($titles); ?>;
-    var images = <?php echo json_encode($thumbnails); ?>;
-    var availability = <?php echo json_encode($availability); ?>;
-    var status = "Unknkown"
-
-    for(var i = 0; i < titles.length; i++){
-        if (availability[i] == 1){
-            status = "Available"
-        }
-        else if (availability[i] == 0){
-            status = "Unavailable"
-        }
-
-        string = '<div class="book">'
-        string += '<img class="book-thumbnail" src="' + images[i] + '">'
-        string += '<div class="book-details">'
-        string += '<p class="book-title">' + titles[i] + '</p>'
-        string += '<p class="availability">' + status + '</p>'
-
-        if (availability[i] == 1){
-            string += '<div class="buttons">'
-            string += '<button class="booking">Book</button>'
-            string += '<button class="reserve">Reserve</button>'
-            string += '</div>'
-        }
-        
-        string += '</div>'
-        string += '</div>'
-
-        document.getElementById("main-body").innerHTML += string;
-    }
-</script>

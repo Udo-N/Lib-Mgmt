@@ -10,7 +10,7 @@
     $books = [];
 
     if($search){
-        $query = "SELECT id FROM `library-database`.`books` WHERE LOWER(`title`) LIKE LOWER('%$search%')";
+        $query = "SELECT * FROM `library-database`.`books` WHERE LOWER(`title`) LIKE LOWER('%$search%')";
         $statement = $db->prepare($query);
         $statement->execute();
         $book_ids = $statement->fetchAll();
@@ -21,6 +21,10 @@
         echo("No results");
     }
     else{
-        echo '<pre>'; print_r($book_ids); echo '</pre>'; //PlaceHolder to print search ID values
-    }    
+        // print($book_ids[0]); //PlaceHolder to print search ID values
+    } 
+    
+    session_start();
+    $_SESSION['Book_IDs'] = $book_ids;
+    header("Location: ../index.php");
 ?>
