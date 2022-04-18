@@ -29,10 +29,10 @@
             exit();
         }
         else{
-            header("Location: ../pass-mismatch-signup.html");
+            header("Location: ../html/pass-mismatch-signup.html");
         }
     }
     else{
-        header("Location: ../user-taken-signup.html");
+        header("Location: ../html/user-taken-signup.html");
     }      
 ?>

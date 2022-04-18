@@ -26,5 +26,5 @@
     
     session_start();
     $_SESSION['Book_IDs'] = $book_ids;
-    header("Location: ../index.php");
+    header("Location: index.php");
 ?>

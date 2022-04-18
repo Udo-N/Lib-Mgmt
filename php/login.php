@@ -28,11 +28,11 @@
             exit();
         }
         else{
-            header("Location: ../invalid-password-login.html");
+            header("Location: ../html/invalid-password-login.html");
         } 
     }
     else{
-        header("Location: ../invalid-user-login.html");
+        header("Location: ../html/invalid-user-login.html");
     }   
       
 ?>
