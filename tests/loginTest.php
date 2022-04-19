@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-include('Testclasses.php');
+include('testclasses/Testclasses.php');
 
 
 class TestClassesTest extends \PHPUnit\Framework\TestCase{

@@ -19,7 +19,7 @@
 
     <coverage processUncoveredFiles="true">
         <include>
-            <directory suffix=".php">php</directory>
+            <directory suffix=".php">tests/testClasses</directory>
         </include>
     </coverage>
 </phpunit>
