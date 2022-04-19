@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd
+class ComposerStaticInit2f6aab24bc5cba4a9d64015a7697625b
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -35,14 +35,18 @@ class ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -67,6 +71,10 @@ class ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/php',
         ),
     );
 
@@ -654,9 +662,9 @@ class ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit50f80297d193cdd79c5492d2784c8ecd::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2f6aab24bc5cba4a9d64015a7697625b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2f6aab24bc5cba4a9d64015a7697625b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2f6aab24bc5cba4a9d64015a7697625b::$classMap;
 
         }, null, ClassLoader::class);
     }
