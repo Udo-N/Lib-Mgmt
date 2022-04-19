@@ -14,7 +14,13 @@ class TestClassesTest extends \PHPUnit\Framework\TestCase{
         $pwd = "password3";
 
         $loginObj->loginUser($uname, $pwd);
-        $this->assertEquals(true, $loginObj->loginSuccess);        
+        $this->assertEquals(true, $loginObj->loginSuccess);   
+        
+        $loginObj->loginUser($uname, 'False Password');
+        $this->assertEquals(false, $loginObj->loginSuccess); 
+
+        $loginObj->loginUser('False User', $pwd);
+        $this->assertEquals(false, $loginObj->loginSuccess); 
     }
 
     /**
@@ -28,7 +34,10 @@ class TestClassesTest extends \PHPUnit\Framework\TestCase{
         $pwd2 = $pwd;
 
         $signupObj->signupUser($uname, $pwd, $pwd2);
-        $this->assertEquals(true, $signupObj->signupSuccess);        
+        $this->assertEquals(true, $signupObj->signupSuccess);     
+        
+        $signupObj->signupUser($uname, $pwd, 'random text');
+        $this->assertEquals(false, $signupObj->signupSuccess); 
     }
 
     /**
@@ -40,7 +49,11 @@ class TestClassesTest extends \PHPUnit\Framework\TestCase{
         $searchText = substr('The facility', 0, $rand_length);
 
         $searchObj->searchBook($searchText);
-        $this->assertEquals(true, $searchObj->searchSuccess);        
+        $this->assertEquals(true, $searchObj->searchSuccess);
+        
+        $searchText = "Random String";
+        $searchObj->searchBook($searchText);
+        $this->assertEquals(false, $searchObj->searchSuccess);
     }
 
 }
