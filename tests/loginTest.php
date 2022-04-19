@@ -31,4 +31,16 @@ class TestClassesTest extends \PHPUnit\Framework\TestCase{
         $this->assertEquals(true, $signupObj->signupSuccess);        
     }
 
+    /**
+     * @covers App\SearchTestClass
+     */
+    public function testSearch(){
+        $searchObj = new SearchTestClass;
+        $rand_length = rand(1, 12);
+        $searchText = substr('The facility', 0, $rand_length);
+
+        $searchObj->searchBook($searchText);
+        $this->assertEquals(true, $searchObj->searchSuccess);        
+    }
+
 }
