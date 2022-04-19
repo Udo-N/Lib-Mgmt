@@ -213,7 +213,7 @@ form input:last-child:hover{
     color: #383dc9; 
 }
 
-.availability{
+.availability, .idDisplay{
     font-size: 2em;
     color: #383dc9; 
     text-align: center;
@@ -416,7 +416,7 @@ form input:last-child:hover{
 
 @media (min-width: 1200px) {
     .img1 {
-        height: 50px;
+        height: 70px;
         width: 300px;
         margin-top: -15px;
     }

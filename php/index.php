@@ -7,18 +7,28 @@
 
     session_start();
     
-    $ids = @$_SESSION['Book_IDs'];       // Array containing ids of results of search.php
+    $ids = @$_SESSION['Book_IDs'];     
     $user = @$_SESSION['Username']; 
+    $idArray = [];
     $titles = [];
     $thumbnails = [];
     $availability = [];
 
     if($ids){
         for ($i = 0; $i < count($ids); $i++){
+            $current_id = $ids[$i]['id'];
             $current_title = $ids[$i]['title'];
             $current_thumbnail = $ids[$i]['image'];
-            $current_availability = $ids[$i]['availability'];
+            // $current_availability = $ids[$i]['availability'];
 
+            $current_availability = '';
+            $query = "SELECT availability FROM `library-database`.`books` WHERE id = $current_id";
+            $statement = $db->prepare($query);
+            $statement->execute();
+            $current_availability = $statement->fetch();
+            $statement->closeCursor();
+
+            array_push($idArray, $current_id);
             array_push($titles, $current_title);
             array_push($thumbnails, $current_thumbnail);
             array_push($availability, $current_availability);
@@ -101,13 +111,19 @@
 </html>
 
 <script>
+    // Pad digits so that 1 becomes 0001
+    function pad(n) {
+        var s = "000" + n;
+        return s.substr(s.length-4);
+    }
+
     var currentUser = <?php echo json_encode($user); ?>;
+    var bookIDs = <?php echo json_encode($idArray); ?>;
     var titles = <?php echo json_encode($titles); ?>;
     var images = <?php echo json_encode($thumbnails); ?>;
     var availability = <?php echo json_encode($availability); ?>;
+    var availCount = 0;
     var status = "Unknkown"
-
-    console.log(currentUser)
 
     if(currentUser != null){
         document.getElementById("right-header").innerHTML = "<div id='current-user'>Logged in as " + currentUser + "</div>";
@@ -117,32 +133,39 @@
         document.getElementById("nav-list").innerHTML += "<li id='phone-signout'><button>Sign Out</button></li>";
     }
 
+    console.log("Loop starts")
     for(var i = 0; i < titles.length; i++){
-        if (availability[i] == 1){
+        if (availability[i]['availability'] == 1){
             status = "Available"
         }
-        else if (availability[i] == 0){
+        else if (availability[i]['availability'] == 0){
             status = "Unavailable"
         }
 
-        string = '<div class="book">'
+        string = '<div id="book' + i + '" class="book">'
         string += '<img class="book-thumbnail" src="' + images[i] + '">'
         string += '<div class="book-details">'
         string += '<p class="book-title">' + titles[i] + '</p>'
+        string += '<p class="idDisplay">' + pad(bookIDs[i]) + '</p>'
         string += '<p class="availability">' + status + '</p>'
 
-        if (availability[i] == 1){
+        if (availability[i]['availability'] == 1){
             string += '<div class="buttons">'
-            string += '<button class="booking">Book</button>'
-            string += '<button class="reserve">Reserve</button>'
+            string += '<button id="booking' + i + '" class="booking">Book</button>'
+            string += '<button  id="reserve' + i + '"  class="reserve">Reserve</button>'
             string += '</div>'
+            availCount++
+
         }
         
         string += '</div>'
         string += '</div>'
 
-        document.getElementById("main-body").innerHTML += string;
+        document.getElementById("main-body").innerHTML += string;        
     }
+
+    var bookButtons = document.querySelectorAll(".booking");
+    var reserveButtons = document.querySelectorAll(".reserve");
 
     document.addEventListener("DOMContentLoaded", () => {
         const signOut = document.getElementById("signout");
@@ -158,4 +181,52 @@
             });
         }
     });
+
+
+    for (let bookButton of bookButtons) {
+        bookButton.addEventListener("click", () => { 
+            if(currentUser){
+                $.ajax({
+                method: "POST",
+                url: "book.php",
+                data: { 
+                    book_ID: parseInt(bookButton.parentNode.previousSibling.previousSibling.innerHTML, 10), username: currentUser}
+                }).success(function( msg ) {
+                    console.log(msg);
+                });
+                console.log(bookButton.parentNode)
+                bookButton.parentNode.style.display = "none"
+                bookButton.parentNode.previousSibling.innerHTML = "Booking Successful"
+            }
+            else{
+                location.href = ("../html/login.html")
+            }           
+            
+            
+        });
+    }
+
+    for (let reserveButton of reserveButtons) {
+        reserveButton.addEventListener("click", () => { 
+            if(currentUser){
+                $.ajax({
+                method: "POST",
+                url: "reserve.php",
+                data: { 
+                    book_ID: parseInt(reserveButton.parentNode.previousSibling.previousSibling.innerHTML, 10),
+                    username: currentUser}
+                }).success(function( msg ) {
+                    console.log(msg);
+                });
+                console.log(reserveButton.parentNode)
+                reserveButton.parentNode.style.display = "none"
+                reserveButton.parentNode.previousSibling.innerHTML = "Reservation Successful"
+            }
+            else{
+                location.href = ("../html/login.html")
+            }           
+            
+            
+        });
+    }
 </script>
