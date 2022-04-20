@@ -19,7 +19,7 @@
 
 - Open Selenium IDE via the browser extension
 - Load 'Lib-Mgmt-Automated-Tests.side' into Selenium
-- Click on the 'run all tests' button
+- Click on the 'run all tests' icon near the top left
 
 # How to run PHPUnit tests
 
